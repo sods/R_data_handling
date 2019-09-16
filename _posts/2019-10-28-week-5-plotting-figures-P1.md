@@ -1,7 +1,7 @@
 ---
 layout: lab
 title: Week 5
-date: 2019-11-28 15:00
+date: 2019-10-28 15:00
 session: 2019-2020
 length: 1.5
 venue: Hicks, Computer Room D17 (GAMMA starts at 15:00 and ALPHA on Tuesday, October 29th at 13:30)
