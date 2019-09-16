@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/data_banner.jpeg" width="50%"/>
-
 This sessions are part of the first year module **BMS109 Introduction to Biomedical Science**, Department of Biomedical Science University of Sheffield. They are designed for first year biology students with little or no knowledge of programming and statistics, to enhance their data handling skils and to provide an introduction to the use of R programming for data analysis.
 
 These sessions aim to:
