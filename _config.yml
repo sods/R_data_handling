@@ -8,7 +8,7 @@ baseurl: "/R_data_handling" # the subpath of your site, e.g. /blog/
 url: "http://opendsi.cc" # the base hostname & protocol for your site
 twitter_username: marta_milo
 github_username:  martamilo
-banner: data_banner.jpg
+banner: word_cloud1.jpg
 # Build settings
 markdown: kramdown
 disqus: opendsiccbioinformatics
