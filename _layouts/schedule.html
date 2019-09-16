@@ -4,6 +4,15 @@ layout: page
 
 {{ content }}
 
+<h2>Lectures</h2>
+{% for post in site.posts reversed %}
+{% if post.layout == "lecture" %}
+{% if post.session == site.session %}
+<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% if post.tagline %}<b>{{ post.tagline }}</b>{% endif %} {{ post.date | date: "%A, %B %-d at %H:%M" }} ({{ post.length }} hrs) {% if post.venue %} in {{ post.venue }}{% endif %}</p>
+{% endif %}
+{% endif %}
+{% endfor %}
+
 <h2>Lab Classes</h2>
 {% for post in site.posts reversed %}
 {% if post.layout == "lab" %}
