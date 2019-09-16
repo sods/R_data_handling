@@ -1,5 +1,5 @@
 ---
-layout: lecture
+layout: lab
 title: Week 6
 date: 2019-11-4 13:30
 session: 2019-2020
