@@ -3,9 +3,9 @@ layout: page
 title: About
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/data_banner.jpeg" width="30%"/>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/data_banner.jpeg" width="50%"/>
 
-This sessions are part of the module **BMS109 Introduction to Biomedical Science**, Department of Biomedical Sceince University of Sheffield. They are designed for first year biology students with little or no knowledge of programming and statistics, to enhance their data handling skils and to provide an introduction to the use of R programming for data analysis.
+This sessions are part of the first year module **BMS109 Introduction to Biomedical Science**, Department of Biomedical Science University of Sheffield. They are designed for first year biology students with little or no knowledge of programming and statistics, to enhance their data handling skils and to provide an introduction to the use of R programming for data analysis.
 
 These sessions aim to:
 
@@ -34,9 +34,9 @@ These sessions will enable you to take control of your data and critically asses
 
 #### Links for your additional Reading
 
-The sessions are implemented using and open-source software R that can be dowloaded [here] (https://www.r-project.org/). Familiarise yourself with the concept behind open-source software by exploring the site.
+The sessions are implemented using the open-source software R that can be dowloaded [here] (https://www.r-project.org/). Familiarise yourself with the concept behind open-source software by exploring the site.
 
-The most effective and complete help is available on line. First point of help is "Google" where you can search for key words adding R language to find often the solution to the problem. This is an essential part of learning to code and to use R to explore your data. it is there for you, make the most of it.
+The most effective and complete help when you learn to code, is available on line. First point of help is "Google" where you can search for key words adding R language to find often the solution to the problem. This is an essential part of learning to code and to use R to explore your data. it is there for you, make the most of it.
 
 
 Some suggested sites where additional material can be found, are listed
