@@ -27,8 +27,7 @@ Following these sessions and additional practice/reading you should be able to m
 5.	Acquire new transferable skills.
 
 
-These sessions will enable you to take control of your data and critically assess the information contained in them. This is whilst enhancing your innovative thinking in data analysis.
-
+These sessions will enable you to take control of your data and critically assess the information contained in them. This is whilst enhancing your innovative thinking in data analysis. They will prepare you for the second year when statistics is introduced and for the third year when you have access to the bioinformatics module, where coding is esential.
 
 #### Links for your additional Reading
 
