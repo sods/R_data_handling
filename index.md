@@ -41,7 +41,7 @@ below:
 
 * [R programming](http://www.statmethods.net/)
 
-* [ggplot2] (http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
+* [ggplot2](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
 
 * [Elements of Statistics](http://www.open.edu/openlearnworks/mod/oucontent/view.php?id=18263&printable=1)
 
