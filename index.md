@@ -31,7 +31,7 @@ These sessions will enable you to take control of your data and critically asses
 
 #### Links for your additional Reading
 
-The sessions are implemented using the open-source software R that can be dowloaded [here] (https://www.r-project.org/). Familiarise yourself with the concept behind open-source software by exploring the site.
+The sessions are implemented using the open-source software R that can be dowloaded [here](https://www.r-project.org/). Familiarise yourself with the concept behind open-source software by exploring the site.
 
 The most effective and complete help when you learn to code, is available on line. First point of help is "Google" where you can search for key words adding R language to find often the solution to the problem. This is an essential part of learning to code and to use R to explore your data. it is there for you, make the most of it.
 
