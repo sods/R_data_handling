@@ -23,5 +23,5 @@ title: Tips and FAQs
 
 **I do not know what I am doing, I do not know what that code is doing.** This is a very common feeling when you have not explored enough the logical process behind what you are doing. Every task in these sessions, however trivial are supported by a logical process. When you feel like thi, just pause and do not think at the code but at the logical steps you need to solve the problem. The code will then make sense even if its syntax might still be not clear. For that you have the R help, the web and the instructors when you are in class. 
 
-
+**When I save my data from Excel worksheet into a comma serated values file, what type of CSV do I choose in the "Save As" menu in Excel?** You will need to choode the **CSV (Comma Delimited)** type when you save the original excel file into a .CSV file to be imported in R. 
 
