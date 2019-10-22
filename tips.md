@@ -17,6 +17,8 @@ title: Tips and FAQs
 
 * R does not like spaces.  Make sure that you use "_" or other characters that are NOT used as logical operators or arithmetic operators, when you define names for variables and file names. Also no spaces are accepted before round brackets in functions (between the name of the function and its arguments).
 
+* When you set your working directory make you have a created a specific directory for your project. This wll help to keep your scripts and your data together. You can also use subfolders within your home working directory so that you can keep data separated from scripts. **REMEMBER** R does not like spaces. Choose well when you decide what names to give to foldes and files. Use the "_" or the "." to separate the words if needed.
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/faq.png" width="30%"/>
 
 ## List of questions frequently asked by students attending these sessions 
