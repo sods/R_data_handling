@@ -104,15 +104,15 @@ bd_sA<-ggplot(bdA_stats,
   labs(y = "Blood Osmolarity (mg)", title = "Sample A")+
   theme_classic()
 
-bd_sA<-ggplot(bdA_stats, 
-              aes(x = Group, y = mean_bdA, 
-                  ymin = mean_bdA - se, ymax = mean_bdA + se)) + 
+bd_sB<-ggplot(bdB_stats, 
+              aes(x = Group, y = mean_bdB, 
+                  ymin = mean_bdB - se, ymax = mean_bdB + se)) + 
   geom_col(fill = "lightblue", width = 0.7) + 
   geom_errorbar(width = 0.25) + 
-  labs(y = "Blood Osmolarity (mg)", title = "Sample A")+
+  labs(y = "Blood Osmolarity (mg)", title = "Sample B")+
   theme_classic()
 
-
+plot_grid(bd_sA, bd_sB, labels = c("a)", "b)"))
 
 # histograms for blood data
 ggplot(blood_data, aes(x=sample.A, color=Group)) +
