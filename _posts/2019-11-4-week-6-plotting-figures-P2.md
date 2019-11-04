@@ -11,6 +11,6 @@ tagline: Plotting Figures P2 and summary
 
 The slides for the session will be available after the last seession on Tuesday, November 5th. 
 
-Week 6 slides can be found [here] 
+Week 6 slides can be found [here](http://opendsi.cc/R_data_handling/assets/Session_Wk6.pdf). The scripyt associated to the slides can be downloaded [here](http://opendsi.cc/R_data_handling/assets/Wk6_Script.R).
 
 You are encouraged to discuss your work with your peers to work together and ask questions to the deostrators and the instructor. This practical work won't count to the final grade but it is essential to build foundations for your data handling skills that will make a difference in the grades in your later studies. 
