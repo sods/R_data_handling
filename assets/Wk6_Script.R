@@ -28,12 +28,12 @@ plot_grid(ggplot_iris1, ggplot_iris2, labels = c("a)", "b)"))
 
 
 # box plot for blood data
-ggplot_bd1<-ggplot(blood_data, aes(x = Group, y = sample.A, fill = Group)) + 
+ggplot_bd1<-ggplot(blood_data, aes(x = Group, y = sampleA, fill = Group)) + 
   geom_boxplot() + 
   labs(x = "Group", y = "Blood Osmolarity", fill= "Group") +
   theme_classic()
 
-ggplot_bd2<-ggplot(blood_data, aes(x = Group, y = sample.B, fill = Group)) + 
+ggplot_bd2<-ggplot(blood_data, aes(x = Group, y = sampleB, fill = Group)) + 
   geom_boxplot() + 
   labs(x = "Group", y = "Blood Osmolarity", fill= "Group") +
   theme_classic()
@@ -48,10 +48,10 @@ plot_grid(ggplot_bd1, ggplot_bd2, labels = c("a)", "b)"))
 # Using the mean
 
 # step 1 no dplyr
-sampleA.mean <- summarise(group_by(blood_data, Group), mean.SampleA = mean(sample.A))
-sampleB.mean <- summarise(group_by(blood_data, Group), mean.SampleB = mean(sample.B))
+sampleA.mean <- summarise(group_by(blood_data, Group), mean.SampleA = mean(sampleA))
+sampleB.mean <- summarise(group_by(blood_data, Group), mean.SampleB = mean(sampleB))
 
-mean.blood_data <- data.frame(blood_data$Group, sampleA.mean$mean.SampleA, sampleB.mean$mean.SampleB)
+mean.blood_data <- data.frame(unique(blood_data$Group), sampleA.mean$mean.SampleA, sampleB.mean$mean.SampleB)
 mean.blood_data
 
 
@@ -59,7 +59,7 @@ mean.blood_data
 bdA_stats <- 
   blood_data %>%
   group_by(Group) %>% 
-  summarise(mean_bdA = mean(sample.A))
+  summarise(mean_bdA = mean(sampleA))
 
 # step 2 
 bd_sA<-ggplot(bdA_stats, aes(x = Group, y = mean_bdA)) + 
@@ -71,7 +71,7 @@ bd_sA<-ggplot(bdA_stats, aes(x = Group, y = mean_bdA)) +
 bdB_stats <- 
   blood_data %>%
   group_by(Group) %>% 
-  summarise(mean_bdB = mean(sample.B))
+  summarise(mean_bdB = mean(sampleB))
 
 # step 2 
 bd_sB<-ggplot(bdB_stats, aes(x = Group, y = mean_bdB)) + 
@@ -91,7 +91,7 @@ bdA_stats <-
 bdB_stats <- 
   blood_data %>%
   group_by(Group) %>% 
-  summarise(mean_bdB = mean(sample.B),
+  summarise(mean_bdB = mean(sampleB),
             se = sd(sample.A) / sqrt(n()))
 
 
@@ -127,7 +127,7 @@ pA<-ggplot(blood_data, aes(x=sample.A, fill=Group, color=Group)) +
   labs(x="Osmolarity", title="Sample A")+
   facet_grid(Group ~ .)
 
-pB<-ggplot(blood_data, aes(x=sample.B, fill=Group, color=Group)) +
+pB<-ggplot(blood_data, aes(x=sampleB, fill=Group, color=Group)) +
   geom_histogram(position="identity", alpha=0.5, binwidth = 5)+
   labs(x="Osmolarity", title="Sample B")+
   facet_grid(Group ~ .)
@@ -143,7 +143,7 @@ pA<-ggplot(blood_data, aes(x=sample.A, fill=Group, color=Group)) +
   labs(x="Osmolarity", title="Sample A")+
   facet_grid(Group ~ .)
 
-pB<-ggplot(blood_data, aes(x=sample.B, fill=Group, color=Group)) +
+pB<-ggplot(blood_data, aes(x=sampleB, fill=Group, color=Group)) +
   geom_histogram(aes(y= ..density..), alpha=0.5, binwidth = 5)+
   geom_density(alpha=.2, fill="#FF6666")+  # Overlay with transparent density plot
   labs(x="Osmolarity", title="Sample B")+
